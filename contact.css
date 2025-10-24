@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif; scroll-behavior: smooth;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #472400;
+    color: white;
+}
+
+h1 {
+  color: #ffaf61;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background-color: #2d1500;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  min-width: 260px;
+}
+
+.contact-info h2 {
+  color: #ffaf61;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+form {
+  background-color: #2d1500;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  flex: 1;
+  min-width: 300px;
+}
+
+form h2 {
+  color: #ffaf61;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #ffaf61;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6b3a0b;
+  color: white;
+  font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #e6cbb4;
+}
+
+button {
+  background-color: #ffaf61;
+  color: #2d1500;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffa041;
+}
+
