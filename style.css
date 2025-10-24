@@ -21,8 +21,8 @@ body{
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: #472400;
-    color: white;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg') no-repeat center center/cover;
+    color:  #e6cbb4;
 }
 
 header{
@@ -30,9 +30,9 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
     padding: 1rem 9%;
-    background-color: #331a00;
+    background-color: rgba(0, 0, 0, 0.6);
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ header{
 .logo{
     font-size: 3rem;
     color: #FFAF61;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     transition: 0.5s ease;
 }
@@ -54,7 +54,7 @@ header{
 
 nav a{
     font-size: 1.8rem;
-    color: white;
+    color:  #e6cbb4;
     margin-left: 4rem;
     font-weight: 500;
     transition: 0.3s ease;
@@ -66,7 +66,7 @@ nav a:hover{
     border-bottom: 3px solid #FFAF61;
 }
 
-@media(max-width:995px){
+@media(max-width:762px){
     nav{
         position: absolute;
         top: 100%;
@@ -108,7 +108,6 @@ section{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: #472400;
 }
 
 .home .home-content h1{
@@ -173,9 +172,9 @@ span{
 }
 
 footer {
-  background-color: #331a00;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 50px 9% 20px;
-  color: #fff;
+  color:  #e6cbb4;
   font-weight: 400;
   font-size: 15px;
 }
@@ -347,12 +346,14 @@ footer {
 
 /* M-order */
 .judul-order{
-  color: #ffaf61;
+  color:#FFAF61;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .text-order{
+  color: #e6cbb4;
   text-align: center;
   margin-bottom: 30px;
   font-size: 15px;
@@ -361,7 +362,7 @@ footer {
 .form-order{
   max-width: 600px;
   margin: 0 auto;
-  background-color: #2d1500;
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -372,7 +373,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-weight: 500;
-  color: #ffaf61;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 input,
@@ -383,8 +384,8 @@ textarea {
   margin-bottom: 15px;
   border: none;
   border-radius: 5px;
-  background-color: #6b3a0b;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  color:#e6cbb4;
   font-size: 14px;
 }
 
@@ -414,9 +415,11 @@ button:hover {
   color: #ffaf61;
   text-align: center;
   margin-bottom: 15px;
+  margin-top: 30px;
 }
 
 .text-contact{
+  color: #e6cbb4;
   text-align: center;
   margin-bottom: 30px;
   font-size: 15px;
@@ -433,7 +436,8 @@ button:hover {
 }
 
 .contact-info {
-  background-color: #2d1500;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #e6cbb4;
   padding: 20px 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -451,7 +455,7 @@ button:hover {
 }
 
 form {
-  background-color: #2d1500;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 25px 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -485,5 +489,5 @@ button {
 }
 
 button:hover {
-  background-color: #ffa041;
+  background-color: #FFAF61;
 }
