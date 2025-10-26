@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <title>Top 4 Best Seller</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Top 4 Best Seller</title>
 
-     <style>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      border: none;
+      outline: none;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
 
-    body{
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+
+    body {
       width: 100%;
       min-height: 100vh;
       overflow-x: hidden;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('background.jpg') no-repeat center center/cover;
-      color:  #e6cbb4;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
+      color: #e6cbb4;
     }
 
-    .btn-back{
+    .btn-back {
       display: flex;
       align-items: end;
       justify-content: end;
@@ -26,7 +42,7 @@
       margin-right: 255px;
     }
 
-    .btn{
+    .btn {
       padding: 1rem 2.8rem;
       bottom: 2rem;
       z-index: 999;
@@ -41,7 +57,7 @@
       text-decoration: none;
     }
 
-    .btn:hover{
+    .btn:hover {
       transform: scale3d(1.03);
       background-color: #FFAF61;
       color: #472400;
@@ -50,7 +66,7 @@
 
     /* Responsive tweak so the button doesn't overlap content on small screens */
     @media (max-width: 480px) {
-      .btn{
+      .btn {
         right: 1rem;
         bottom: 1rem;
         padding: 0.6rem 1.4rem;
@@ -63,14 +79,15 @@
       margin: 30px auto;
       border-collapse: collapse;
       background-color: rgba(255, 255, 255, 0.05);
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       color: #f5e6cc;
       font-family: 'Poppins', sans-serif;
       border-radius: 8px;
       overflow: hidden;
     }
 
-    th, td {
+    th,
+    td {
       padding: 12px 18px;
       text-align: left;
       border-bottom: 1px solid #FFAF61;
@@ -95,6 +112,76 @@
       color: #FFAF61;
       margin-bottom: 10px;
     }
+
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 50px 9% 20px;
+      color: #e6cbb4;
+      font-weight: 400;
+      font-size: 15px;
+      text-decoration: none;
+      margin-top: 400px;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 9%;
+      font-weight: 600;
+      position: sticky;
+      filter: drop-shadow(10px);
+      align-items: center;
+      color: #ffaf61;
+      text-decoration: none;
+      margin: 5px 0;
+      transition: 0.3s;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .footer-links a:hover {
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #472400;
+      padding-top: 15px;
+      color: #ffcf61;
+    }
+
+    .footer-contact a {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 4rem;
+      height: 4rem;
+      background-color: transparent;
+      border: 0.2rem solid #ffaf61;
+      font-size: 2rem;
+      border-radius: 50%;
+      margin: 3rem 1.5rem 3rem 0;
+      transition: 0.3s ease;
+      color: #ffaf61;
+      text-decoration: none;
+    }
+
+    .footer-contact a:hover {
+      color: black;
+      transform: scale(1.3) translateY(-5px);
+      background-color: #ffaf61;
+      box-shadow: 0 0 25px #ffaf61;
+    }
   </style>
 
 
@@ -102,38 +189,60 @@
 
 <body>
 
-    <table>
-  <caption>Best-Selling Products</caption>
-  <tr>
-    <th>Product</th>
-    <th>Category</th>
-    <th>Price</th>
-  </tr>
-  <tr>
-    <td>Breads</td>
-    <td>Classic Sourdough</td>
-    <td>Rp15.000</td>
-  </tr>
-  <tr>
-    <td>Pastries</td>
-    <td>Butter Croissant</td>
-    <td>Rp18.000</td>
-  </tr>
-  <tr>
-    <td>Cakes</td>
-    <td>Strawberry Shortcake</td>
-    <td>Rp25.000</td>
-  </tr>
-  <tr>
-    <td>Beverages</td>
-    <td>Hot Coffe</td>
-    <td>Rp10.000</td>
-  </tr>
-</table>
+  <table>
+    <caption>Best-Selling Products</caption>
+    <tr>
+      <th>Product</th>
+      <th>Category</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Breads</td>
+      <td>Classic Sourdough</td>
+      <td>Rp15.000</td>
+    </tr>
+    <tr>
+      <td>Pastries</td>
+      <td>Butter Croissant</td>
+      <td>Rp18.000</td>
+    </tr>
+    <tr>
+      <td>Cakes</td>
+      <td>Strawberry Shortcake</td>
+      <td>Rp25.000</td>
+    </tr>
+    <tr>
+      <td>Beverages</td>
+      <td>Hot Coffe</td>
+      <td>Rp10.000</td>
+    </tr>
+  </table>
 
-<div class="btn-back">
+  <div class="btn-back">
     <a href="M-home.html" class="btn"> <i class="fa-solid fa-backward"></i></a>
-</div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <h3>Bakery</h3>
+        <p>Baked with love since 1999.</p>
+        <p>From our oven to your heart.</p>
+        <p>Where every bite feels like home.</p>
+        <p>Elegant flavors, timeless quality.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <a href="https://www.instagram.com/rangga.reswara?igsh=MjJ6MTRuZGxjcXZz&utm_source=qr"> <i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/6281293081012"> <i class="fa-brands fa-whatsapp"></i></a>
+        <a href="mailto:cakrarangga270@gmail.com"> <i class="fa-regular fa-envelope"></i></a>
+      </div>
+
+    </div>
+  </footer>
 
 </body>
+
 </html>
